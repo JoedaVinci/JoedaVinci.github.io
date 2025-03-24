@@ -181,3 +181,9 @@ nav button{
         width: 8rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+}
