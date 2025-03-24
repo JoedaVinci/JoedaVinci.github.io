@@ -182,11 +182,12 @@ nav button{
     }
 }
 
-.mobile { 
-    display: block; /* default it will show in mobile devices. */
+.mobile {
+  cursor: pointer;
 }
-@media only screen and (min-width: 767px) {
-  .mobile { 
-    display: none; /* it will hide larger than 765px eg: laptop and desktop */
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
   }
 }
