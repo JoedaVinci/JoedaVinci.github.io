@@ -182,8 +182,11 @@ nav button{
     }
 }
 
-@media (min-width: 1024px) {
-    .mobile {
-        display: none;
-    }
+.mobile { 
+    display: block; /* default it will show in mobile devices. */
+}
+@media only screen and (min-width: 767px) {
+  .mobile { 
+    display: none; /* it will hide larger than 765px eg: laptop and desktop */
+  }
 }
