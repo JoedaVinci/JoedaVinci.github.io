@@ -330,3 +330,13 @@ nav button{
           60% { top: -150px; }
           80% { top: -200px; }
       }
+h1 {
+        font-weight: bold;
+        color: #777;
+        font-size: 48px;
+      }
+h2 {
+        font-weight: bold;
+        color: #777;
+        padding: 60px;
+      }
