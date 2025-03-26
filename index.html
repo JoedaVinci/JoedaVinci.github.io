@@ -155,7 +155,7 @@
             </div>
           </a>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-4 image" data-aos="fade-up" data-aos-delay="100">
           <a href="asset/img/misty lake.jpg" class="d-block photo-item">
             <img src="https://raw.githubusercontent.com/JoedaVinci/JoedaVinci.github.io/refs/heads/main/asset/img/misty%20lake.jpg" alt="Image" class="img-fluid">
             <div class="photo-text-more">
@@ -166,6 +166,7 @@
             </div>
           </a>
         </div>
+        <div class='image-container'>
         <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <a href="asset/img/moonlit pier.jpg" class="d-block photo-item">
             <img src="https://raw.githubusercontent.com/JoedaVinci/JoedaVinci.github.io/refs/heads/main/asset/img/moonlit%20pier.jpg" alt="Image" class="img-fluid">
@@ -177,7 +178,11 @@
             </div>
           </a>
         </div>
-
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="asset/img/moonlit pier.jpg" alt="">
+        </div>
  <!-- EXTRA PHOTO SPACES
         <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="">
           <a href="pgs/single.html" class="d-block photo-item">
@@ -315,6 +320,15 @@ END OF SECTION -->
   <script src="js/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js"></script>
-    
+  <script>document.querySelectorALL('.image-container img').forEach(image =>{
+              image.onclick = ()=>{
+                  document.querySelector('.popup-image').style.display = 'block';
+                  document.querySelector('.popup-image img').src = image.getAttribute('src');
+              }
+});
+    document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none':
+    }
+                                                                    </script>
   </body>
 </html>
